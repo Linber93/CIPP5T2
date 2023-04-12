@@ -46,7 +46,9 @@ To save time in this process, the IT team suggested an ML system that detects in
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 * Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
+## Encounterd Bugs
 
+a new version of blinker which isnt compatible with the version of python was detected. added the specific version of blinker to the "requirements.txt"
 ## Unfixed Bugs
 * You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 

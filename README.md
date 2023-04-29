@@ -30,6 +30,7 @@ To save time in this process, the IT team suggested an ML system that detects in
  	* We will display the difference between an average parasitised leaf and an average uninfected leaf.
 	* We will display an image montage for either parasitised or uninfected leaves.
 
+<hr>
 
 ## ML Business Case
 ### MildewClf
@@ -44,13 +45,14 @@ To save time in this process, the IT team suggested an ML system that detects in
     - This project this fictious story for the developer to learn skill related to Machine Learning that could be applicable in the future in a real world setting.
 
 
-
+<hr>
 
 
 ## Dashboard Design
 * Project summary
+    
     * General information
-        * Powdery mildew is a fungal disease tha affects a wide range of plants.
+        * Powdery mildew is a fungal disease that affects a wide range of plants.
         * Powdery mildew is one of the easier plant diseases to identify, as its symptoms are quite distinctive. Infected plants display white powdery spots on the leaves and stems.
     * Project Information
         * The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.
@@ -61,7 +63,11 @@ To save time in this process, the IT team suggested an ML system that detects in
         * The client is interested in:
             * conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
             * predicting if a cherry leaf is healthy or contains powdery mildew.
+<br><br>
+![Summary](documentation/project_summary.png)
+![Summary2](documentation/project_summary2.png)
 
+<hr>
 
 * Data visualization
     * Leaf Visualizer
@@ -71,19 +77,46 @@ To save time in this process, the IT team suggested an ML system that detects in
             * Difference of the average and the variablity of the dataset
             * Differences between the average infected and average healthy leaves
             * Image montage of health and infected leaves
+
+<br><br>
+![average/variability](documentation/average_variability_image.png)
+![montage](documentation/image_montage.png)
+
+
+<hr>
+
 * ML performance
-    * 
+    * Train, Validation and Test Set: Labels Frequency
+        * Barplot to show the distribution of health and infected in the train, validation and test set
+        * Pieplot to show the distribution of health and infected in the train, validation and test set
+    * Model History
+        * Plots displaying the Model training history for both Accuracy and Losses.
+    * Generalised Performance on Test Set.
+<br><br>
+![tbarplot](documentation/performance_barplot.png)    
+![pieplot](documentation/performance_pieplot.png)  
+![training history](documentation/model_train_history.png)
+
+<hr>
+
 * Project hypothesis
     * 
 * Mildew detector
-    * 
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+    * The client wants a tool for telling whether a leaf is infected by mildew or is healthy.
+    * A downloadable set of the infected and healthy samples for live testing is available [here](https://www.kaggle.com/codeinstitute/cherry-leaves).
+    * The page also has a file uploader to upload images of cherry leaves to analyse to determine if it is infected or not.
+<br><br>   
+![Detector](documentation/mildew_detector.png)
+
+<hr>
+
 
 ## Encounterd Bugs
 
 a new version of blinker which isnt compatible with the version of python was detected. added the specific version of blinker to the "requirements.txt"
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+
+* None
 
 ## Deployment
 ### Heroku

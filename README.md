@@ -17,14 +17,16 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## Hypothesis and how to validate?
 * We suspect that the Mildew infected plants can be identified by white powdery spot on the leaves and stem.
     * How to validate : An image study can help to investigate it.
-* Studies suggest that Mildew grows well in greenhouses where plants are densely located. 
-    * How to validate : Further data collection on site required for further analysis to  determine if there is a correlation between temperature, humidity and the infectivity
+* It can be assumed that a working model could predict if the leaf is infected despite being provided with images in different orientations . 
+    * How to validate : Using data augmentation before fitting the model to provide more data should give us the ability to predict different pictures
+* We suspect that mildew could also be detected on other plants and leaves.
+    * How to validate : collect an additional test set from plants other than cherry trees.
 
 <hr>
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 * **Business Requirement 1**: Data Visualization 
-	* We will display the "mean" and "standard deviation" images for parasitised and uninfected leaves.
+	* We will display the "Average" and "variablility" images for parasitised and uninfected leaves.
  	* We will display the difference between an average parasitised leaf and an average uninfected leaf.
 	* We will display an image montage for either parasitised or uninfected leaves.
 
@@ -34,16 +36,47 @@ To save time in this process, the IT team suggested an ML system that detects in
 * I intend to use a ML model to predict if a leaf is infected with mildew or not, Using historical image data. It is a supervised, single-label, 2-class, classification model.
 * Our preferred result is to be able to provide the client with a reliable way to identify infected plants to prevent the client to unintentionally selling plants of poor quality.
 * The model success metrics are:
-    * placeholder
-* Heuristics: placeholder
-* The training data: placeholder
+    * Created a scalable method verify mildew infected trees faster than doing it manually.
+* Heuristics: The current method to verify if a tree is infected by mildew is that an employee spends around 30 minutes to visually inspect every tree, And an additional minute to apply a compound to kill the fungus. This leaves room for inaccurate diagnostics due to human error. Due to the plantation having thousands of trees this is not possible to do regularly on all trees.
+* Training data: 
+    - Dataset has 4208 photos of cherry leaves both healthy and infected with [fungus](https://en.wikipedia.org/wiki/Powdery_mildew). Disease that affect wide range of plants however client interested to test on cherry trees initally. If successfull the project could be extended to other plants. All images was provided by the client
+    - Dataset located on [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
+    - This project this fictious story for the developer to learn skill related to Machine Learning that could be applicable in the future in a real world setting.
 
 
 
 
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
+* Project summary
+    * General information
+        * Powdery mildew is a fungal disease tha affects a wide range of plants.
+        * Powdery mildew is one of the easier plant diseases to identify, as its symptoms are quite distinctive. Infected plants display white powdery spots on the leaves and stems.
+    * Project Information
+        * The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.
+        * The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
+        * To save time in this process, the IT team suggested an ML system that detects instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests, and if this initiative is successful, there is a realistic chance to replicate this project for all other crops.
+    * Business requirements
+        * The Client has provided us with 2 requirements to fulfil during this project.
+        * The client is interested in:
+            * conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+            * predicting if a cherry leaf is healthy or contains powdery mildew.
+
+
+* Data visualization
+    * Leaf Visualizer
+        * The client is interested in conducting a study to visually differentiates a healthy leaf from a infected leaf.
+    * MultiSelect dropdown.
+        * Allows to select visual representations including plots of the following:
+            * Difference of the average and the variablity of the dataset
+            * Differences between the average infected and average healthy leaves
+            * Image montage of health and infected leaves
+* ML performance
+    * 
+* Project hypothesis
+    * 
+* Mildew detector
+    * 
 * Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
 ## Encounterd Bugs
@@ -64,7 +97,6 @@ a new version of blinker which isnt compatible with the version of python was de
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file. 
 
 
 ## Main Data Analysis and Machine Learning Libraries

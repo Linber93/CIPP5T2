@@ -6,3 +6,11 @@ inputs/datasets/cherry-leaves/cherry-leaves/test/powdery_mildew
 jupyter_notebooks/01-DataCollection.ipynb
 jupyter_notebooks/02-DataVisualization.ipynb
 jupyter_notebooks/03-modeling_evaluation.ipynb
+documentation/project_summary2.png
+documentation/project_summary.png
+documentation/performance_pieplot.png
+documentation/performance_barplot.png
+documentation/model_train_history.png
+documentation/mildew_detector.png
+documentation/image_montage.png
+documentation/average_variability_image.png

@@ -12,7 +12,7 @@ def ml_performance():
     labels_distribution = plt.imread(f"outputs/{version}/labels_distribution.png")
     st.image(labels_distribution, caption='label Distribution on Train, Validation and Test Sets')
     st.write("---")
-    sets_distribution = plt.imread(f"outputs/{version}/sets_distribution_pie.png")
+    sets_distribution = plt.imread(f"outputs/{version}/set_distribution_pie.png")
     st.image(sets_distribution, caption='Pie label Distribution on Train, Validation and Test sets')
     st.write("---")
 

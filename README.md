@@ -114,9 +114,13 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## Encounterd Bugs
 
 * a new version of blinker which isnt compatible with the version of python was detected. added the specific version of blinker to the "requirements.txt"
+<hr>
+
 ## Unfixed Bugs
 
 * None
+
+<hr>
 
 ## Deployment
 ### Heroku
@@ -131,6 +135,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 
+<hr>
 
 ## Main Data Analysis and Machine Learning Libraries
 ### Libraries
@@ -150,6 +155,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 * CodeAnywhere - IDE
 * Jupyter Notebook - used to illustrate the creation of the project
 
+<hr>
+
 
 ## Credits 
 
@@ -157,17 +164,20 @@ To save time in this process, the IT team suggested an ML system that detects in
 * Alot of information was found using the documentations from the libraries above
 * Assisted by 
 
+<hr>
 
 ### Content 
 
 - The text for the Home page was taken from Wikipedia Article A.
 - The general information about mildew was found on [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew).
 
+<hr>
+
 ### Media
 
 - Images used in the project were provided by the client
 
-
+<hr>
 
 
 ## Acknowledgements (optional)

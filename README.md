@@ -113,7 +113,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Encounterd Bugs
 
-a new version of blinker which isnt compatible with the version of python was detected. added the specific version of blinker to the "requirements.txt"
+* a new version of blinker which isnt compatible with the version of python was detected. added the specific version of blinker to the "requirements.txt"
 ## Unfixed Bugs
 
 * None
@@ -133,26 +133,42 @@ a new version of blinker which isnt compatible with the version of python was de
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+### Libraries
+* numpy: Used to load images into an array to plot an average and variablity plot on it.
+* pandas: Used for data cleaning, manipulating and analysis.
+* matplotlib: utilized to create plots.
+* seaborn: Used to visualize data.
+* plotly: Creates interactive visualizations of data.
+* streamlit: Used to create the dashboard for the project.
+* scikit-learn: used to implement the machine learning model.
+* tensorflow: Used to create the ML model
+* keras: Used to create the ML model
+### Technologies
+* Python - programming language
+* Heroku - used to host and deploy the project
+* Kaggle - source for the Dataset
+* CodeAnywhere - IDE
+* Jupyter Notebook - used to illustrate the creation of the project
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* Code from walkthrough project in predictive analytics was used from this [Repository] (https://github.com/Linber93/WalkthroughProject01)
+* Alot of information was found using the documentations from the libraries above
+* Assisted by 
+
 
 ### Content 
 
 - The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- The general information about mildew was found on [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew).
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
+- Images used in the project were provided by the client
+
 
 
 
 ## Acknowledgements (optional)
-* Thank the people that provided support throughout this project.
+* I want to thank my mentor Rohit for great input and feedback with this project

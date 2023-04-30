@@ -20,7 +20,7 @@ def data_visualization():
 
     selected_items = st.multiselect('Visualize', ['Difference average and variability image',
                                                   'Differences between average'
-                                                  'parasitised and average healthy leaves',
+                                                  ' parasitised and average healthy leaves',
                                                   'Image Montage'
                                                   ])
 

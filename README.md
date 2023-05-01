@@ -116,16 +116,11 @@ To save time in this process, the IT team suggested an ML system that detects in
 * a new version of blinker which isnt compatible with the version of python was detected. added the specific version of blinker to the "requirements.txt"
 <hr>
 
-## Unfixed Bugs
-
-* None
-
-<hr>
 
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: [https://mildew-detect-linus.herokuapp.com/](https://mildew-detect-linus.herokuapp.com/)
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 

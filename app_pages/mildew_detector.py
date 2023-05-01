@@ -28,7 +28,7 @@ def mildew_detector():
     st.write("---")
 
     images_buffer = st.file_uploader('Upload leaf samples. You may select more than one.',
-                                        type='JPG',accept_multiple_files=True)
+                                     type='JPG', accept_multiple_files=True)
 
     if images_buffer is not None:
         df_report = pd.DataFrame([])
@@ -44,11 +44,10 @@ def mildew_detector():
         pred_proba, pred_class = load_model_and_predict(resized_img, version=version)
         plot_predictions_probabilities(pred_proba, pred_class)
 
-        df_report = df_report.append({"Name":image.name, 'Result': pred_class },
-                                    ignore_index=True)
-    
+        df_report = df_report.append({"Name": image.name, 'Result': pred_class},
+                                     ignore_index=True)
+
     if not df_report.empty:
         st.success("Analysis Report")
         st.table(df_report)
         st.markdown(download_dataframe_as_csv(df_report), unsafe_allow_html=True)
-

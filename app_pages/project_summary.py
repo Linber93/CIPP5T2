@@ -51,4 +51,5 @@ def project_summary():
 
     st.write(
         f"* For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/Linber93/CIPP5T2/blob/main/README.md).")
+        f"[Project README file](https://github.com/Linber93/CIPP5T2/blob/main/README.md)."
+    )

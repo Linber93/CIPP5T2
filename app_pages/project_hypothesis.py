@@ -31,15 +31,16 @@ def project_hypothesis():
 
     st.write("### Hypothesis 3")
     st.info(
-        f"We suspect that mildew could also be detected on other plants and leaves."
+        f"We suspect that mildew could also be detected"
+        f" on other plants and leaves."
     )
     st.error(
         f"We could NOT validate this hypothesis.\n\n"
         f"When tried predicting mildew on other plants the model"
         f"did wrongly predict mildew.\n\n"
-        f"Additionally when the model was provided with and image of something "
+        f"Additionally when the model was provided with and "
+        f"image of something "
         f"else but a leaf it tried to make a prediction on that too"
         f"instead of rejecting the input.\n\n"
         f"Further training required to implement such features "
     )
-    
